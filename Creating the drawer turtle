@@ -1,0 +1,11 @@
+import turtle
+
+# Set up the screen
+screen = turtle.Screen()
+screen.title("Etch-A-Sketch")
+screen.bgcolor("white")
+
+# Set up the turtle
+drawer = turtle.Turtle()
+drawer.speed(0)
+drawer.pensize(2)

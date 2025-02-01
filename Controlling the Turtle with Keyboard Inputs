@@ -1,0 +1,31 @@
+import turtle
+
+# Set up the screen
+screen = turtle.Screen()
+screen.title("Etch-A-Sketch")
+screen.bgcolor("white")
+
+# Set up the turtle
+drawer = turtle.Turtle()
+drawer.speed(0)
+drawer.pensize(2)
+
+# Controls for the turtle
+def move_up():
+    drawer.setheading(90)
+    drawer.forward(10)
+
+def move_down():
+    drawer.setheading(270)
+    drawer.forward(10)
+
+def move_left():
+    drawer.setheading(180)
+    drawer.forward(10)
+
+def move_right():
+    drawer.setheading(0)
+    drawer.forward(10)
+
+def clear_screen():
+    drawer.clear()

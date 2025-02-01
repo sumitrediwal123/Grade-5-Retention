@@ -23,9 +23,8 @@ def move_left():
     drawer.setheading(180)
     drawer.forward(10)
 
-def move_right():
-    drawer.setheading(0)
-    drawer.forward(10)
+#Task:- Do the code for move right.
+
 
 def clear_screen():
     drawer.clear()

@@ -1,4 +1,4 @@
-# Check for collision with the wall
+ # Check for collision with the wall
     if head.xcor() > 290 or head.xcor() < -290 or head.ycor() > 290 or head.ycor() < -290:
         time.sleep(1)
         head.goto(0, 0)
@@ -34,3 +34,7 @@
             score = 0
             pen.clear()
             pen.write("Score: {} High Score: {}".format(score, high_score), align="center", font=("Courier", 24, "normal"))
+
+    time.sleep(delay)
+
+win.mainloop()

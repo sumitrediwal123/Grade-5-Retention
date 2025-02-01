@@ -1,0 +1,27 @@
+# Main game loop
+while True:
+    t.update()
+
+    # Check for collision with food
+    if head.distance(food) < 15:
+        # Move the food to a random position
+        x = random.randint(-290, 290)
+        y = random.randint(-290, 290)
+        food.goto(x, y)
+
+        # Add a segment to the snake
+        new_segment = turtle.Turtle()
+        new_segment.speed(0)
+        new_segment.shape("square")
+        new_segment.color("grey")
+        new_segment.penup()
+        segments.append(new_segment)
+
+        # Increase the score
+        score += 10
+        if score > high_score:
+            high_score = score
+
+        # Update score display
+        pen.clear()
+        pen.write("Score: {} High Score: {}".format(score, high_score), align="center", font=("Courier", 24, "normal"))

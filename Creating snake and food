@@ -1,3 +1,17 @@
+import turtle
+import time
+import random
+
+delay = 0.1
+
+# Set up the screen
+t = turtle.Screen()
+t.title("Snake Game")
+t.bgcolor("Dark Green")
+t.setup(width=800, height=600)
+#t.tracer(0)
+#Task:- Change the size and the color of the screen.
+
 # Snake Head
 head = turtle.Turtle()
 head.speed(0)

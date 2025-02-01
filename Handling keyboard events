@@ -1,0 +1,7 @@
+# Keyboard bindings
+t.listen()
+t.onkey(go_up, "w")
+t.onkey(go_down, "s")
+t.onkey(go_right, "d")
+t.onkey(go_left, "a")
+#Task:- Change the onkeys to control the game.
